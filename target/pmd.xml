@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pmd xmlns="http://pmd.sourceforge.net/report/2.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://pmd.sourceforge.net/report/2.0.0 http://pmd.sourceforge.net/report_2_0_0.xsd"
+    version="6.21.0" timestamp="2020-05-07T19:35:44.909">
+<file name="C:\Users\Claud\NewVaadinWorkspace\maeven\src\test\ual\hmis\sesion06\Ejercicio2Test.java">
+<violation beginline="7" endline="7" begincolumn="1" endcolumn="32" rule="UnusedImports" ruleset="Best Practices" package="test.ual.hmis.sesion06" class="Ejercicio2Test" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#unusedimports" priority="4">
+Avoid unused imports such as 'test.ual.hmis.sesion06'
+</violation>
+<violation beginline="7" endline="7" begincolumn="1" endcolumn="32" rule="ImportFromSamePackage" ruleset="Error Prone" package="test.ual.hmis.sesion06" class="Ejercicio2Test" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_errorprone.html#importfromsamepackage" priority="3">
+No need to import a type that lives in the same package
+</violation>
+</file>
+<file name="C:\Users\Claud\NewVaadinWorkspace\maeven\src\test\ual\hmis\sesion06\Ejercicio3Test.java">
+<violation beginline="7" endline="7" begincolumn="1" endcolumn="32" rule="UnusedImports" ruleset="Best Practices" package="test.ual.hmis.sesion06" class="Ejercicio3Test" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#unusedimports" priority="4">
+Avoid unused imports such as 'test.ual.hmis.sesion06'
+</violation>
+<violation beginline="7" endline="7" begincolumn="1" endcolumn="32" rule="ImportFromSamePackage" ruleset="Error Prone" package="test.ual.hmis.sesion06" class="Ejercicio3Test" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_errorprone.html#importfromsamepackage" priority="3">
+No need to import a type that lives in the same package
+</violation>
+</file>
+<file name="C:\Users\Claud\NewVaadinWorkspace\maeven\src\test\ual\hmis\sesion06\Ejercicio6Test.java">
+<violation beginline="6" endline="6" begincolumn="1" endcolumn="32" rule="UnusedImports" ruleset="Best Practices" package="test.ual.hmis.sesion06" class="Ejercicio6Test" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#unusedimports" priority="4">
+Avoid unused imports such as 'test.ual.hmis.sesion06'
+</violation>
+<violation beginline="6" endline="6" begincolumn="1" endcolumn="32" rule="ImportFromSamePackage" ruleset="Error Prone" package="test.ual.hmis.sesion06" class="Ejercicio6Test" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_errorprone.html#importfromsamepackage" priority="3">
+No need to import a type that lives in the same package
+</violation>
+</file>
+<file name="C:\Users\Claud\NewVaadinWorkspace\maeven\src\ual\hmis\sesion06\Alumno.java">
+<violation beginline="71" endline="71" begincolumn="16" endcolumn="24" rule="UnusedLocalVariable" ruleset="Best Practices" package="ual.hmis.sesion06" class="Alumno" method="calificacion" variable="resultado" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#unusedlocalvariable" priority="3">
+Avoid unused local variables such as 'resultado'.
+</violation>
+</file>
+<file name="C:\Users\Claud\NewVaadinWorkspace\maeven\src\ual\hmis\sesion06\Ferry.java">
+<violation beginline="32" endline="32" begincolumn="30" endcolumn="30" rule="UnusedLocalVariable" ruleset="Best Practices" package="ual.hmis.sesion06" class="Ferry" method="totalVehiculos" variable="v" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#unusedlocalvariable" priority="3">
+Avoid unused local variables such as 'v'.
+</violation>
+</file>
+</pmd>

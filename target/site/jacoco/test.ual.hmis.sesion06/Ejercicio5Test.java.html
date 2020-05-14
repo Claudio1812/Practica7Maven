@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="es"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Ejercicio5Test.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">maeven</a> &gt; <a href="index.source.html" class="el_package">test.ual.hmis.sesion06</a> &gt; <span class="el_source">Ejercicio5Test.java</span></div><h1>Ejercicio5Test.java</h1><pre class="source lang-java linenums">package test.ual.hmis.sesion06;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+import java.util.ArrayList;
+
+import org.junit.jupiter.api.Test;
+
+import ual.hmis.sesion06.Actividad;
+import ual.hmis.sesion06.Alumno;
+import ual.hmis.sesion06.Ejercicio;
+import ual.hmis.sesion06.Profesor;
+
+
+<span class="fc" id="L14">public class Ejercicio5Test {</span>
+
+	
+	@Test
+	public void test() {
+<span class="fc" id="L19">		Actividad actividad = new Actividad();</span>
+<span class="fc" id="L20">		Actividad actividad1 = new Actividad();</span>
+<span class="fc" id="L21">		Actividad activad2 = new Actividad();</span>
+
+<span class="fc" id="L23">		Ejercicio primero = new Ejercicio();</span>
+<span class="fc" id="L24">		Ejercicio segundo = new Ejercicio();</span>
+<span class="fc" id="L25">		Ejercicio tercero = new Ejercicio();</span>
+
+<span class="fc" id="L27">		Alumno federico = new Alumno();</span>
+
+		
+		
+<span class="fc" id="L31">		ArrayList&lt;Ejercicio&gt; contenedorEjer = new ArrayList&lt;Ejercicio&gt;();</span>
+<span class="fc" id="L32">		ArrayList&lt;Actividad&gt; contenedorAc = new ArrayList&lt;Actividad&gt;();</span>
+<span class="fc" id="L33">		ArrayList&lt;Alumno&gt; contenedorAlum = new ArrayList&lt;Alumno&gt;();</span>
+		
+<span class="fc" id="L35">		contenedorAlum.add(federico);</span>
+
+<span class="fc" id="L37">		Profesor federica=new Profesor(contenedorAlum);</span>
+
+<span class="fc" id="L39">		primero.setNombre(&quot;primero&quot;);</span>
+<span class="fc" id="L40">		primero.setPuntuacion(4.7);</span>
+		
+<span class="fc" id="L42">		segundo.setNombre(&quot;segundo&quot;);</span>
+<span class="fc" id="L43">		segundo.setPuntuacion(25.0);</span>
+		
+<span class="fc" id="L45">		tercero.setNombre(&quot;tercero&quot;);</span>
+<span class="fc" id="L46">		tercero.setPuntuacion(11.2);</span>
+		
+<span class="fc" id="L48">		contenedorEjer.add(primero);</span>
+<span class="fc" id="L49">		contenedorEjer.add(segundo);</span>
+		
+<span class="fc" id="L51">		actividad.setEjercicios(contenedorEjer);</span>
+<span class="fc" id="L52">		actividad.setNombre(&quot;primero&quot;);</span>
+		
+<span class="fc" id="L54">		actividad1.agregarEjercicioCalificado(&quot;ejer&quot;, 10.0);</span>
+		
+<span class="fc" id="L56">		actividad1.setApta(false);</span>
+		
+<span class="fc" id="L58">		contenedorAc.add(actividad);</span>
+<span class="fc" id="L59">		contenedorAc.add(actividad1);</span>
+<span class="fc" id="L60">		contenedorAc.add(activad2);</span>
+		
+<span class="fc" id="L62">		federico.setActividadesAsignadas(contenedorAc);</span>
+<span class="fc" id="L63">		federico.setNombre(&quot;federico&quot;);</span>
+
+<span class="fc" id="L65">		federica.calificarAlumnos();</span>
+		
+<span class="fc" id="L67">		assertEquals(primero.getNombre(),&quot;primero&quot;);</span>
+
+<span class="fc" id="L69">		assertEquals(&quot;federico&quot;,federico.getNombre());</span>
+<span class="fc" id="L70">		assertEquals(contenedorAc,federico.getActividadesAsignadas());</span>
+<span class="fc" id="L71">		assertEquals(federico.calcularNotaActividad(&quot;primero&quot;),29.7,0.01);</span>
+<span class="fc" id="L72">		assertEquals(federico.calcularNotaActividad(&quot;primero&quot;),actividad.getPuntuacionTotal(),0.01);</span>
+		
+<span class="fc" id="L74">		assertEquals(actividad1.isApta(),true);</span>
+		
+		
+<span class="fc" id="L77">	}</span>
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.5.201910111838</span></div></body></html>

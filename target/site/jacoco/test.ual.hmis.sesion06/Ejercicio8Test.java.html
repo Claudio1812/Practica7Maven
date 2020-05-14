@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="es"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Ejercicio8Test.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">maeven</a> &gt; <a href="index.source.html" class="el_package">test.ual.hmis.sesion06</a> &gt; <span class="el_source">Ejercicio8Test.java</span></div><h1>Ejercicio8Test.java</h1><pre class="source lang-java linenums">package test.ual.hmis.sesion06;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+import java.util.ArrayList;
+
+import org.junit.jupiter.api.Test;
+
+import ual.hmis.sesion06.Ferry;
+import ual.hmis.sesion06.Vehiculo;
+
+
+<span class="fc" id="L12">public class Ejercicio8Test {</span>
+
+	@Test
+	public void test() {
+<span class="fc" id="L16">		ArrayList&lt;Vehiculo&gt; contenedor = new ArrayList&lt;Vehiculo&gt;();</span>
+		
+<span class="fc" id="L18">		Ferry barco = new Ferry();</span>
+<span class="fc" id="L19">		Ferry barco1 = new Ferry();</span>
+		
+<span class="fc" id="L21">		Vehiculo coche1 = new Vehiculo();</span>
+<span class="fc" id="L22">		Vehiculo coche2 = new Vehiculo();</span>
+<span class="fc" id="L23">		Vehiculo coche3 = new Vehiculo();</span>
+<span class="fc" id="L24">		Vehiculo coche4 = new Vehiculo();</span>
+
+<span class="fc" id="L26">		coche1.setPesoConCarga(268);</span>
+<span class="fc" id="L27">		coche2.setPesoConCarga(450);</span>
+<span class="fc" id="L28">		coche3.setPesoConCarga(320);</span>
+<span class="fc" id="L29">		coche4.setPesoConCarga(2560);</span>
+		
+<span class="fc" id="L31">		coche1.setNumeroPasajeros(6);</span>
+<span class="fc" id="L32">		coche1.setNumeroRuedas(4);</span>
+<span class="fc" id="L33">		coche1.setPesoConCarga(1200);</span>
+		
+<span class="fc" id="L35">		contenedor.add(coche1);</span>
+<span class="fc" id="L36">		contenedor.add(coche2);</span>
+<span class="fc" id="L37">		contenedor.add(coche3);</span>
+		
+<span class="fc" id="L39">		barco1.maxPeso=0;</span>
+<span class="fc" id="L40">		barco1.maxVehiculos=0;</span>
+
+<span class="fc" id="L42">		barco.maxOcupantes=300;</span>
+<span class="fc" id="L43">		barco.maxVehiculos=2;</span>
+<span class="fc" id="L44">		barco.setVehiculos(contenedor);</span>
+<span class="fc" id="L45">		barco.getVehiculos();</span>
+
+
+<span class="fc" id="L48">		assertEquals(barco.superadoMaximoPeso(),false);</span>
+<span class="fc" id="L49">		assertEquals(barco.superadoMaximoVehiculos(),false);</span>
+		
+<span class="fc" id="L51">		barco.embarcarVehiculo(coche4);</span>
+		
+<span class="fc" id="L53">		assertEquals(barco.superadoMaximoPeso(),true);</span>
+<span class="fc" id="L54">		assertEquals(barco.vacio(),false);</span>
+<span class="fc" id="L55">		assertEquals(barco.totalVehiculos(),4);</span>
+		
+<span class="fc" id="L57">		assertEquals(coche1.getNumeroPasajeros(),6);</span>
+<span class="fc" id="L58">		assertEquals(coche1.getNumeroRuedas(),4);</span>
+<span class="fc" id="L59">		assertEquals(coche1.getPesoConCarga(),1200);</span>
+		
+<span class="fc" id="L61">		assertEquals(barco1.vacio(),true);</span>
+<span class="fc" id="L62">		assertEquals(barco1.superadoMaximoVehiculos(),false);</span>
+<span class="fc" id="L63">		assertEquals(barco1.superadoMaximoPeso(),false);</span>
+
+<span class="fc" id="L65">		barco1.embarcarVehiculo(coche4);</span>
+<span class="fc" id="L66">		assertEquals(barco1.superadoMaximoVehiculos(),true);</span>
+
+		
+<span class="fc" id="L69">	}</span>
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.5.201910111838</span></div></body></html>

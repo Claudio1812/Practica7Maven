@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="es"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Ejercicio7Test.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">maeven</a> &gt; <a href="index.source.html" class="el_package">test.ual.hmis.sesion06</a> &gt; <span class="el_source">Ejercicio7Test.java</span></div><h1>Ejercicio7Test.java</h1><pre class="source lang-java linenums">package test.ual.hmis.sesion06;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+import org.junit.jupiter.api.Test;
+
+import ual.hmis.sesion06.Alumno;
+
+
+
+<span class="fc" id="L10">public class Ejercicio7Test {</span>
+
+	@Test
+	public void test() {
+<span class="fc" id="L14">	Alumno al = new Alumno();</span>
+<span class="fc" id="L15">	assertEquals(al.cursoSegunEdad(2017),&quot;1  infantil&quot;);</span>
+<span class="fc" id="L16">	assertEquals(al.cursoSegunEdad(2016),&quot;2  infantil&quot;);</span>
+<span class="fc" id="L17">	assertEquals(al.cursoSegunEdad(2015),&quot;3  infantil&quot;);</span>
+<span class="fc" id="L18">	assertEquals(al.cursoSegunEdad(2014),&quot;1  primaria&quot;);</span>
+<span class="fc" id="L19">	assertEquals(al.cursoSegunEdad(2013),&quot;2  primaria&quot;);</span>
+<span class="fc" id="L20">	assertEquals(al.cursoSegunEdad(2012),&quot;3  primaria&quot;);</span>
+<span class="fc" id="L21">	assertEquals(al.cursoSegunEdad(2011),&quot;4  primaria&quot;);</span>
+<span class="fc" id="L22">	assertEquals(al.cursoSegunEdad(2010),&quot;5  primaria&quot;);</span>
+<span class="fc" id="L23">	assertEquals(al.cursoSegunEdad(2009),&quot;6  primaria&quot;);</span>
+<span class="fc" id="L24">	assertEquals(al.cursoSegunEdad(2008),&quot;1  secundaria&quot;);</span>
+<span class="fc" id="L25">	assertEquals(al.cursoSegunEdad(2007),&quot;2  secundaria&quot;);</span>
+<span class="fc" id="L26">	assertEquals(al.cursoSegunEdad(2006),&quot;3  secundaria&quot;);</span>
+<span class="fc" id="L27">	assertEquals(al.cursoSegunEdad(2005),&quot;4  secundaria&quot;);</span>
+<span class="fc" id="L28">	assertEquals(al.cursoSegunEdad(2002),&quot;chiquito&quot;);</span>
+
+	
+	
+<span class="fc" id="L32">	}</span>
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.5.201910111838</span></div></body></html>
