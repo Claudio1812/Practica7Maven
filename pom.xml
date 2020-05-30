@@ -126,6 +126,20 @@
       </plugin>
    
   
+	       <plugin>
+			<groupId>org.owasp</groupId>
+			<artifactId>dependency-check-maven</artifactId>
+			<version>5.3.2</version>
+			<configuration>
+			<skipTestScope>false</skipTestScope>
+				<formats> 
+		    			<format>HTML</format>
+		    			<format>XML</format>
+		  		</formats>
+		   </plugin>
+	   
+	    
+	    
      
     </plugins>
   </build>
@@ -153,18 +167,7 @@
    	</plugin>
 	   
 	   
-		   <plugin>
-			<groupId>org.owasp</groupId>
-			<artifactId>dependency-check-maven</artifactId>
-			<version>5.3.2</version>
-			<configuration>
-			<skipTestScope>false</skipTestScope>
-				<formats> 
-		    			<format>HTML</format>
-		    			<format>XML</format>
-		  		</formats>
-		   </plugin>
-	   
+		
    <!--  Independecy checks tenemos que meterlo lo del format para que coga xml o algo asi -->
    <plugin>
 	   	<groupId>org.apache.maven.plugins</groupId>
