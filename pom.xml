@@ -58,9 +58,9 @@
     <plugin>
     	<groupId>org.apache.maven.plugins</groupId>
     	<artifactId>maven-javadoc-plugin</artifactId>
-    		<configuration>
+    		<!--<configuration>
     			<javadocExecutable>${java.home}/bin/javadoc</javadocExecutable>
-    		</configuration>
+    		</configuration> -->
     	
     	<version>3.2.0</version>
     </plugin>
@@ -154,14 +154,14 @@
 	  	 <effort>Max</effort>
 	   </configuration>
    </plugin>  
-   
+   -->
    <plugin>
    		<groupId>org.apache.maven.plugins</groupId>
    		<artifactId>maven-project-info-reports-plugin</artifactId>
    		<version>3.0.0</version>
    	</plugin>
 	   
-	   -->
+	   
 		
    <!--  Independecy checks tenemos que meterlo lo del format para que coga xml o algo asi -->
    <plugin>
