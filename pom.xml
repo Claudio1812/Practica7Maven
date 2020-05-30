@@ -133,9 +133,10 @@
 			<configuration>
 			<skipTestScope>false</skipTestScope>
 				<formats> 
-		    			<format>HTML</format>
+		    		<format>HTML</format>
 		    			<format>XML</format>
-		  		</formats>
+		  	</formats>
+		</configuration>
 		   </plugin>
 	   
 	    
