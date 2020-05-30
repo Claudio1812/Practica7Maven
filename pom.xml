@@ -149,17 +149,16 @@
   <reporting>
    <plugins>
    
-   <!--  No funciona
    <plugin>
-   <groupId>org.codehaus.mojo</groupId>
-   <artifactId>findbugs‐maven‐plugin</artifactId>
-   <version>3.0.4</version>
-   <configuration>
-   <effort>Max</effort>
-   </configuration>
+	   <groupId>org.codehaus.mojo</groupId>
+	   <artifactId>findbugs‐maven‐plugin</artifactId>
+	   <version>3.0.4</version>
+	   
+	   <configuration>
+	  	 <effort>Max</effort>
+	   </configuration>
    </plugin>
    
-   -->
    
    <plugin>
    		<groupId>org.apache.maven.plugins</groupId>
