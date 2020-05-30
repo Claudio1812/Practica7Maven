@@ -153,7 +153,7 @@
 	   <configuration>
 	  	 <effort>Max</effort>
 	   </configuration>
-   </plugin> --> 
+   </plugin>  
    
    <plugin>
    		<groupId>org.apache.maven.plugins</groupId>
@@ -161,7 +161,7 @@
    		<version>3.0.0</version>
    	</plugin>
 	   
-	   
+	   -->
 		
    <!--  Independecy checks tenemos que meterlo lo del format para que coga xml o algo asi -->
    <plugin>
