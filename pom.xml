@@ -58,9 +58,9 @@
     <plugin>
     	<groupId>org.apache.maven.plugins</groupId>
     	<artifactId>maven-javadoc-plugin</artifactId>
-    		<!--<configuration>
+    		<configuration>
     			<javadocExecutable>${java.home}/bin/javadoc</javadocExecutable>
-    		</configuration> -->
+    		</configuration>
     	
     	<version>3.2.0</version>
     </plugin>
@@ -137,24 +137,30 @@
 		    			<format>XML</format>
 		  	</formats>
 		</configuration>
-	</plugin>
+		   </plugin>
+	   
+	    
+	    
+     
     </plugins>
   </build>
 
 
   <reporting>
-   	<plugins>
-    			 
-   <!-- <plugin>
-	   <groupId>org.codehaus.mojo</groupId>
-	   <artifactId>findbugs‐maven‐plugin</artifactId>
-	   <version>3.0.4</version>
-	   
-	   <configuration>
-	  	 <effort>Max</effort>
-	   </configuration>
-   </plugin>  
+   <plugins>
+   
+   <!--  No funciona
+   <plugin>
+   <groupId>org.codehaus.mojo</groupId>
+   <artifactId>findbugs‐maven‐plugin</artifactId>
+   <version>3.0.4</version>
+   <configuration>
+   <effort>Max</effort>
+   </configuration>
+   </plugin>
+   
    -->
+   
    <plugin>
    		<groupId>org.apache.maven.plugins</groupId>
    		<artifactId>maven-project-info-reports-plugin</artifactId>
