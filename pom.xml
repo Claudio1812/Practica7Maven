@@ -88,12 +88,7 @@
                 <version>3.8.0</version>
             </plugin>
             
-                <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-javadoc-plugin</artifactId>
-                <version>3.2.0</version>
-                   
-            </plugin>
+               
             
             <plugin>
                 <groupId>org.owasp</groupId>
@@ -137,6 +132,14 @@
                 </configuration>
             </plugin>
         
+            
+             <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-javadoc-plugin</artifactId>
+                <version>3.2.0</version>
+                   
+            </plugin>
+            
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-checkstyle-plugin</artifactId>
