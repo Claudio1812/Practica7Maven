@@ -8,6 +8,14 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     </properties>
     <dependencies>
+        
+        <dependency>
+    <groupId>org.apache.maven.plugins</groupId>
+    <artifactId>maven-compiler-plugin</artifactId>
+    <version>3.8.0</version>
+</dependency>
+
+        
         <dependency>
             <!-- Esto no funcionaba -->
             <groupId>org.codehaus.mojo</groupId>
